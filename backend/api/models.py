@@ -47,4 +47,7 @@ class User(models.Model):
     pass
 
 class Merch(models.Model):
-    pass
+    title = models.CharField(max_length=255)
+    inventory = models.IntegerField()
+    price = models.DecimalField(max_digits=6,decimal_places=2)
+    description = models.TextField()
